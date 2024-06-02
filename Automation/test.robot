@@ -4,10 +4,10 @@ Library      SeleniumLibrary
 
 
 *** Variables ***
-${url}                    https://tools.brightlocal.com/seo-tools/admin/login?redirect_url=%252Fseo-tools%252Fadmin%252Flsrc%253F&redirect_source=access_control
-${browser}                  chrome
-${password}                   #enter email
-${username}                 #enter email
+${url}                                https://tools.brightlocal.com/seo-tools/admin/login?redirect_url=%252Fseo-tools%252Fadmin%252Flsrc%253F&redirect_source=access_control
+${browser}                            chrome
+${password}                           #enter email
+${username}                           #enter email
 #####################
 ${company}               The Right Home Inspection Services
 ##################
