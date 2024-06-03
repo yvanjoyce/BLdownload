@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.9 on win32)" generated="2024-06-04T01:28:32.020509" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\Yvan\PycharmProjects\RobotFrameworkBLDLProject\Automation\test.robot">
+<test id="s1-t1" name="download report from BL" line="31">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-04T01:28:32.239001" level="INFO">Opening browser 'chrome' to base url 'https://tools.brightlocal.com/seo-tools/admin/login?redirect_url=%252Fseo-tools%252Fadmin%252Flsrc%253F&amp;redirect_source=access_control'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-04T01:28:32.239001" elapsed="4.727239"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-04T01:28:36.967288" elapsed="0.052239"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T01:28:37.021699" level="INFO">Typing text '' into text field 'xpath=/html/body/div[1]/div/div[1]/form/input[1]'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[1]/form/input[1]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T01:28:37.020682" elapsed="0.421997"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-04T01:28:37.443732" level="INFO">Typing text '' into text field 'xpath=/html/body/div[1]/div/div[1]/form/input[2]'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[1]/form/input[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T01:28:37.443732" elapsed="0.074035"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-04T01:28:37.517767" level="INFO">Clicking button 'xpath=/html/body/div[1]/div/div[1]/form/div[2]/button'.</msg>
+<arg>xpath=/html/body/div[1]/div/div[1]/form/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T01:28:37.517767" elapsed="0.134622"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-04T01:28:40.988156" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6572F22C2+60002]
+	(No symbol) [0x00007FF65726CA59]
+	(No symbol) [0x00007FF657127EDA]
+	(No symbol) [0x00007FF6570FD5B5]
+	(No symbol) [0x00007FF6571A3727]
+	(No symbol) [0x00007FF6571BB3A1]
+	(No symbol) [0x00007FF65719C033]
+	(No symbol) [0x00007FF657169657]
+	(No symbol) [0x00007FF65716A251]
+	GetHandleVerifier [0x00007FF657603E2D+3278285]
+	GetHandleVerifier [0x00007FF657650190+3590448]
+	GetHandleVerifier [0x00007FF6576461D0+3549552]
+	GetHandleVerifier [0x00007FF6573A1DE6+779654]
+	(No symbol) [0x00007FF657277ACF]
+	(No symbol) [0x00007FF657272EE4]
+	(No symbol) [0x00007FF657273072]
+	(No symbol) [0x00007FF657262C4F]
+	BaseThreadInitThunk [0x00007FF8FFEB257D+29]
+	RtlUserThreadStart [0x00007FF90004AA48+40]
+</msg>
+<msg time="2024-06-04T01:28:40.989160" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6572F22C2+60002]
+	(No symbol) [0x00007FF65726CA59]
+	(No symbol) [0x00007FF657127EDA]
+	(No symbol) [0x00007FF6570FD5B5]
+	(No symbol) [0x00007FF6571A3727]
+	(No symbol) [0x00007FF6571BB3A1]
+	(No symbol) [0x00007FF65719C033]
+	(No symbol) [0x00007FF657169657]
+	(No symbol) [0x00007FF65716A251]
+	GetHandleVerifier [0x00007FF657603E2D+3278285]
+	GetHandleVerifier [0x00007FF657650190+3590448]
+	GetHandleVerifier [0x00007FF6576461D0+3549552]
+	GetHandleVerifier [0x00007FF6573A1DE6+779654]
+	(No symbol) [0x00007FF657277ACF]
+	(No symbol) [0x00007FF657272EE4]
+	(No symbol) [0x00007FF657273072]
+	(No symbol) [0x00007FF657262C4F]
+	BaseThreadInitThunk [0x00007FF8FFEB257D+29]
+	RtlUserThreadStart [0x00007FF90004AA48+40]
+</msg>
+<arg>xpath=//*[@id="query"]</arg>
+<arg>7s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-04T01:28:37.653405" elapsed="3.343172">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6572F22C2+60002]
+	(No symbol) [0x00007FF65726CA59]
+	(No symbol) [0x00007FF657127EDA]
+	(No symbol) [0x00007FF6570FD5B5]
+	(No symbol) [0x00007FF6571A3727]
+	(No symbol) [0x00007FF6571BB3A1]
+	(No symbol) [0x00007FF65719C033]
+	(No symbol) [0x00007FF657169657]
+	(No symbol) [0x00007FF65716A251]
+	GetHandleVerifier [0x00007FF657603E2D+3278285]
+	GetHandleVerifier [0x00007FF657650190+3590448]
+	GetHandleVerifier [0x00007FF6576461D0+3549552]
+	GetHandleVerifier [0x00007FF6573A1DE6+779654]
+	(No symbol) [0x00007FF657277ACF]
+	(No symbol) [0x00007FF657272EE4]
+	(No symbol) [0x00007FF657273072]
+	(No symbol) [0x00007FF657262C4F]
+	BaseThreadInitThunk [0x00007FF8FFEB257D+29]
+	RtlUserThreadStart [0x00007FF90004AA48+40]
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="query"]</arg>
+<arg>${company}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:40.997738" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>click search button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:40.998742" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="js-lsrc-home-content"]/header/nav/div[1]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:40.998742" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:40.999748" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>found BL company</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.000366" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>click report history</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.000366" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="js-lsrc-home-content"]/ul/li[1]/div[7]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.000366" elapsed="0.001004"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS1}')]/ul/li/a[contains(text(), '${LINK_TEXT1}')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.001422" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS1}')]/ul/li/a[contains(text(), '${LINK_TEXT1}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.001422" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>viewing 1st view</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.002476" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[1]/td[4]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.002476" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>click action buttton 1st</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.003542" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[4]/div/header/div[2]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.003542" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.004547" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.004547" elapsed="0.001005"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.005680" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[1]/td[4]/div/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.005680" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="campaignHistoryActions-0"]/li/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.005680" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>viewing 2nd view</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.006684" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[2]/td[4]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.007055" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>click action buttton 2nd</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.007055" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[4]/div/header/div[2]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.007055" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.008059" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.008059" elapsed="0.000000"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.009110" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[2]/td[4]/div/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.009110" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="campaignHistoryActions-1"]/li/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.009110" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>viewing 3rd view</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.009110" elapsed="0.001059"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[3]/td[4]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.010169" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[4]/div/header/div[2]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.010169" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.011520" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.011520" elapsed="0.000000"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.011520" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>3rd archive</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.012545" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[3]/td[4]/div/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.012545" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="campaignHistoryActions-2"]/li/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.012545" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>viewing 4th view</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.013580" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[4]/td[4]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.013580" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[4]/div/header/div[2]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.014594" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.014594" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.015594" elapsed="0.000000"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.015594" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>4th archive</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.016751" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[4]/td[4]/div/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.016751" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="campaignHistoryActions-3"]/li/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.016751" elapsed="0.001172"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>viewing 5th view</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.017923" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[5]/td[4]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.017923" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[4]/div/header/div[2]/div/div/button</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.018946" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[4]/div/header/div[2]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.018946" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.020026" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.020026" elapsed="0.000000"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.020026" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>5th archive</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.020026" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[5]/td[4]/div/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.020026" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="campaignHistoryActions-4"]/li/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.021082" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>viewing 6th view</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.021082" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[3]/div[2]/table/tbody/tr[6]/td[4]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.021082" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="contentWrapper"]/div[4]/div/header/div[2]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.021082" elapsed="0.001337"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.022419" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, '${DROPDOWN_CLASS}')]/ul/li/a[contains(text(), '${LINK_TEXT}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.022419" elapsed="0.000000"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.022419" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.022419" elapsed="0.000000"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="NOT RUN" start="2024-06-04T01:28:41.023831" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-04T01:28:32.237623" elapsed="8.786208">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6572F22C2+60002]
+	(No symbol) [0x00007FF65726CA59]
+	(No symbol) [0x00007FF657127EDA]
+	(No symbol) [0x00007FF6570FD5B5]
+	(No symbol) [0x00007FF6571A3727]
+	(No symbol) [0x00007FF6571BB3A1]
+	(No symbol) [0x00007FF65719C033]
+	(No symbol) [0x00007FF657169657]
+	(No symbol) [0x00007FF65716A251]
+	GetHandleVerifier [0x00007FF657603E2D+3278285]
+	GetHandleVerifier [0x00007FF657650190+3590448]
+	GetHandleVerifier [0x00007FF6576461D0+3549552]
+	GetHandleVerifier [0x00007FF6573A1DE6+779654]
+	(No symbol) [0x00007FF657277ACF]
+	(No symbol) [0x00007FF657272EE4]
+	(No symbol) [0x00007FF657273072]
+	(No symbol) [0x00007FF657262C4F]
+	BaseThreadInitThunk [0x00007FF8FFEB257D+29]
+	RtlUserThreadStart [0x00007FF90004AA48+40]
+</status>
+</test>
+<status status="FAIL" start="2024-06-04T01:28:32.022510" elapsed="9.003946"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-04T01:28:40.988156" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6572F22C2+60002]
+	(No symbol) [0x00007FF65726CA59]
+	(No symbol) [0x00007FF657127EDA]
+	(No symbol) [0x00007FF6570FD5B5]
+	(No symbol) [0x00007FF6571A3727]
+	(No symbol) [0x00007FF6571BB3A1]
+	(No symbol) [0x00007FF65719C033]
+	(No symbol) [0x00007FF657169657]
+	(No symbol) [0x00007FF65716A251]
+	GetHandleVerifier [0x00007FF657603E2D+3278285]
+	GetHandleVerifier [0x00007FF657650190+3590448]
+	GetHandleVerifier [0x00007FF6576461D0+3549552]
+	GetHandleVerifier [0x00007FF6573A1DE6+779654]
+	(No symbol) [0x00007FF657277ACF]
+	(No symbol) [0x00007FF657272EE4]
+	(No symbol) [0x00007FF657273072]
+	(No symbol) [0x00007FF657262C4F]
+	BaseThreadInitThunk [0x00007FF8FFEB257D+29]
+	RtlUserThreadStart [0x00007FF90004AA48+40]
+</msg>
+</errors>
+</robot>
